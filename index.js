@@ -88,30 +88,18 @@ inizalise the count as 0
 listen ofr click on the incriment buttion
 incre ment wehen buttion clicked
 change the count-el in the html to reflect the new count
-*/
 
-let countel = document.getElementById("count-el")
-let count = 0
 
-function increment() {
-    count = count + 1
-    countel.innerText = count
-}
-
-function save(){
-   console.log(count);  
-}
 
 let userName = "per"
 
-/* console.log(userName);
- */
+ console.log(userName);
 
-/* let message = "you have new notification"
+let message = "you have new notification"
 
 let messageToUser = message + ", " + userName + "!"
 
-console.log(messageToUser); */
+console.log(messageToUser);
 
 let uname = "aneesh"
 let greting = "hi my name is "
@@ -120,4 +108,35 @@ console.log(myGreting);
 
 console.log(4+5); //9
 console.log("2" + "4"); //24
-console.log(100 + "100"); //100100
+console.log(100 + "100"); //100100 
+
+let wellcomeEl = document.getElementById("wellcome-el")
+let name1 = "aneesh"
+let greting1 = "wellcome back "
+messagetosite = greting1 + name1 
+wellcomeEl.innerText = messagetosite
+
+wellcomeEl.innerText += " 🤚"
+
+ */
+
+
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+let count = 0
+//let preVal = "previous entre "
+function increment() {
+    count += 1
+    countEl.innerText = count
+}
+console.log();
+
+function save(){
+    let preVal = count + " - "
+    saveEl.innerText += preVal
+
+    count = 0
+    countEl.innerText = count
+    console.log(count);  
+}
+

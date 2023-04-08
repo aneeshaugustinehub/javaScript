@@ -89,6 +89,7 @@ listen ofr click on the incriment buttion
 incre ment wehen buttion clicked
 change the count-el in the html to reflect the new count
 */
+
 let countel = document.getElementById("count-el")
 let count = 0
 
@@ -98,5 +99,25 @@ function increment() {
 }
 
 function save(){
-
+   console.log(count);  
 }
+
+let userName = "per"
+
+/* console.log(userName);
+ */
+
+/* let message = "you have new notification"
+
+let messageToUser = message + ", " + userName + "!"
+
+console.log(messageToUser); */
+
+let uname = "aneesh"
+let greting = "hi my name is "
+let myGreting = greting + uname
+console.log(myGreting);
+
+console.log(4+5); //9
+console.log("2" + "4"); //24
+console.log(100 + "100"); //100100
